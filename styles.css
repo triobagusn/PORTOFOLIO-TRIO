@@ -234,7 +234,11 @@ img { display: block; max-width: 100%; }
   backdrop-filter: blur(14px);
 }
 .hero-metrics strong { font-size: 1.9rem; letter-spacing: -.04em; }
-.hero-metrics span { color: var(--muted); font-size: .78rem; line-height: 1.4; }
+.hero-metrics article > span {
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.4;
+}
 
 .hero-stage {
   min-height: 650px;
