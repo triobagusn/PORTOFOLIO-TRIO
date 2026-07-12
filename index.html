@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio Trio Bagus Nugroho — Warehouse Operations, Process Improvement, Automation, and Digital Systems." />
+  <meta name="theme-color" content="#070b16" />
+  <meta property="og:title" content="Trio Bagus Nugroho — Operations & Digitalization" />
+  <meta property="og:description" content="Warehouse operations, process improvement, automation, and practical digital systems." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Trio Bagus Nugroho — Operations & Digitalization</title>
+</head>
+<body>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="aurora aurora-one" aria-hidden="true"></div>
+  <div class="aurora aurora-two" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <span class="brand-mark">TB</span>
+      <span class="brand-copy">
+        <strong>TRIO BAGUS</strong>
+        <small data-i18n="brandSubtitle">Operations & Digitalization</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#about" data-i18n="navAbout">Profil</a>
+      <a href="#experience" data-i18n="navExperience">Pengalaman</a>
+      <a href="#projects" data-i18n="navProjects">Project</a>
+      <a href="#dashboard" data-i18n="navDashboard">Dashboard</a>
+      <a href="#capabilities" data-i18n="navCapabilities">Kemampuan</a>
+      <a href="#contact" data-i18n="navContact">Kontak</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="chip-button" id="languageToggle" type="button" aria-label="Change language">EN</button>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Change theme"><span id="themeIcon">☼</span></button>
+      <button class="menu-button" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+    <a href="#about" data-i18n="navAbout">Profil</a>
+    <a href="#experience" data-i18n="navExperience">Pengalaman</a>
+    <a href="#projects" data-i18n="navProjects">Project</a>
+    <a href="#dashboard" data-i18n="navDashboard">Dashboard</a>
+    <a href="#capabilities" data-i18n="navCapabilities">Kemampuan</a>
+    <a href="#contact" data-i18n="navContact">Kontak</a>
+  </div>
+
+  <main>
+    <section class="hero shell" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span><span data-i18n="heroEyebrow">WAREHOUSE • SYSTEMS • AUTOMATION</span></div>
+        <div class="availability"><span></span>Open to strategic opportunities</div>
+        <h1>
+          <span data-i18n="heroTitleLine1">Mengubah proses operasional</span>
+          <span class="gradient-text" data-i18n="heroTitleLine2">menjadi sistem digital yang bisa dipakai.</span>
+        </h1>
+        <p class="hero-lead" data-i18n="heroLead">Saya menggabungkan pengalaman warehouse, process improvement, quality control, dan software delivery untuk membangun sistem yang praktis, traceable, serta siap dipakai di lapangan.</p>
+        <div class="hero-actions">
+          <a class="primary-button magnetic" href="#projects"><span data-i18n="viewProjects">Lihat project pilihan</span><span>↘</span></a>
+          <a class="secondary-button magnetic" href="#contact"><span data-i18n="contactMe">Hubungi saya</span><span>↗</span></a>
+        </div>
+        <div class="hero-metrics">
+          <article><strong class="counter" data-target="6">0</strong><span data-i18n="metricSystems">sistem digital terpilih</span></article>
+          <article><strong class="counter" data-target="4">0</strong><span data-i18n="metricExperience">tahun pengalaman operasional</span></article>
+          <article><strong><span class="counter" data-target="66">0</span>%</strong><span data-i18n="metricEfficiency">pengurangan forklift</span></article>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal delay-1" id="heroStage">
+        <div class="stage-orbit orbit-one"></div>
+        <div class="stage-orbit orbit-two"></div>
+        <div class="profile-glow"></div>
+        <div class="portrait-card tilt-card" data-tilt-strength="8">
+          <div class="portrait-label"><span></span><small data-i18n="profileLabel">OPERATIONAL BUILDER</small></div>
+          <img src="assets/trio-cutout.png" alt="Trio Bagus Nugroho" class="hero-portrait" />
+          <div class="portrait-caption">
+            <strong>Trio Bagus Nugroho</strong>
+            <span data-i18n="heroRole">Warehouse Operations & Digitalization</span>
+          </div>
+        </div>
+        <div class="floating-card float-one"><small>PROCESS</small><strong>Flow redesigned</strong><span>↗ 66%</span></div>
+        <div class="floating-card float-two"><small>DATA</small><strong>45 min saved</strong><span>per process</span></div>
+        <div class="floating-card float-three"><small>SYSTEM</small><strong>Live & traceable</strong><span>mobile ready</span></div>
+      </div>
+    </section>
+
+    <section class="logo-strip" aria-label="Technology stack">
+      <div class="marquee-track">
+        <span>Warehouse Operations</span><i></i><span>Process Improvement</span><i></i><span>Next.js</span><i></i><span>Supabase</span><i></i><span>Google Apps Script</span><i></i><span>PostgreSQL</span><i></i><span>PWA</span><i></i><span>Quality Control</span>
+        <span>Warehouse Operations</span><i></i><span>Process Improvement</span><i></i><span>Next.js</span><i></i><span>Supabase</span><i></i><span>Google Apps Script</span><i></i><span>PostgreSQL</span><i></i><span>PWA</span><i></i><span>Quality Control</span>
+      </div>
+    </section>
+
+    <section class="section shell" id="about">
+      <div class="section-heading reveal">
+        <div class="eyebrow"><span></span><span data-i18n="aboutEyebrow">PROFILE</span></div>
+        <h2 data-i18n="aboutTitle">Dibangun dari operasional nyata, bukan asumsi.</h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-copy reveal">
+          <p data-i18n="aboutP1">Saya memulai dari masalah nyata di lapangan: akurasi stok, FIFO, material handling, batch traceability, approval yang lambat, dan laporan manual. Setelah itu, saya menerjemahkannya menjadi business rules, struktur data, interface, dan automasi.</p>
+          <p data-i18n="aboutP2">Kekuatan utama saya adalah menjembatani kebutuhan operasional dengan solusi digital. Saya tidak hanya membuat dashboard, tetapi membangun alur kerja yang jelas, terkontrol, dan mudah diaudit.</p>
+          <div class="profile-contact-row">
+            <a href="mailto:triobagusn@gmail.com">triobagusn@gmail.com</a>
+            <a href="tel:+6285136513273">+62 851 3651 3273</a>
+          </div>
+        </div>
+        <div class="principles reveal delay-1">
+          <article class="tilt-card"><span>01</span><div><h3>Operational First</h3><p>Sistem mengikuti cara kerja nyata, termasuk exception dan kontrolnya.</p></div></article>
+          <article class="tilt-card"><span>02</span><div><h3>Traceable by Design</h3><p>Setiap movement harus bisa ditelusuri dari sumber sampai laporan akhir.</p></div></article>
+          <article class="tilt-card"><span>03</span><div><h3>Simple at the Point of Use</h3><p>Logika kompleks tetap sederhana ketika digunakan oleh operator.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="shell">
+        <div class="section-heading split reveal">
+          <div>
+            <div class="eyebrow"><span></span><span data-i18n="experienceEyebrow">PROFESSIONAL EXPERIENCE</span></div>
+            <h2 data-i18n="experienceTitle">Pengalaman memimpin proses, warehouse, dan quality control.</h2>
+          </div>
+          <p data-i18n="experienceIntro">Pengalaman ini menjadi fondasi cara saya membangun sistem: memahami proses fisik terlebih dahulu, kemudian memperbaiki flow, kontrol, dan data.</p>
+        </div>
+        <div class="impact-grid reveal">
+          <article><strong>66%</strong><span data-i18n="impactForklift">pengurangan forklift</span></article>
+          <article><strong>45 min</strong><span data-i18n="impactTime">hemat per proses</span></article>
+          <article><strong>9.3%</strong><span data-i18n="impactEfficiency">efisiensi data process</span></article>
+        </div>
+        <div class="experience-timeline" id="experienceTimeline"></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="projects">
+      <div class="section-heading split reveal">
+        <div>
+          <div class="eyebrow"><span></span><span data-i18n="projectsEyebrow">SELECTED SYSTEMS</span></div>
+          <h2 data-i18n="projectsTitle">Sistem yang dirancang untuk hasil operasional.</h2>
+        </div>
+        <p data-i18n="projectsIntro">Project ditampilkan menggunakan data sintetis dan identitas yang dianonimkan. Tidak ada koneksi ke sistem produksi perusahaan.</p>
+      </div>
+      <div class="project-filters reveal" role="group" aria-label="Project filter">
+        <button class="filter-button active" data-filter="all" data-i18n="filterAll">Semua</button>
+        <button class="filter-button" data-filter="inventory" data-i18n="filterInventory">Inventory</button>
+        <button class="filter-button" data-filter="automation" data-i18n="filterAutomation">Automation</button>
+        <button class="filter-button" data-filter="workflow" data-i18n="filterWorkflow">Workflow</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <section class="section dashboard-section" id="dashboard">
+      <div class="shell">
+        <div class="section-heading split reveal">
+          <div>
+            <div class="eyebrow"><span></span><span data-i18n="dashboardEyebrow">DASHBOARD PREVIEW</span></div>
+            <h2 data-i18n="dashboardTitle">Data operasional yang mudah diterjemahkan.</h2>
+          </div>
+          <p data-i18n="dashboardIntro">Contoh UI untuk trend mingguan, kapasitas gudang, status material, dan detail batch. Angka di bawah bersifat dummy untuk demonstrasi.</p>
+        </div>
+
+        <div class="dashboard-shell tilt-card" data-tilt-strength="3">
+          <div class="dashboard-header">
+            <div><span class="live-dot"></span><strong>Operational Control Center</strong><small>Demo environment</small></div>
+            <div class="dashboard-filters"><button class="active">Weekly</button><button>Monthly</button><button>Plant A ▾</button></div>
+          </div>
+
+          <div class="dashboard-kpis">
+            <article><span>STOCK AVAILABLE</span><strong>82.4%</strong><small class="up">↗ 4.1%</small></article>
+            <article><span>WAREHOUSE USED</span><strong>78.0%</strong><small>114 / 146 ton</small></article>
+            <article><span>FIFO ALERT</span><strong>03</strong><small class="warn-text">need review</small></article>
+            <article><span>HOLD MATERIAL</span><strong>12</strong><small>active lots</small></article>
+          </div>
+
+          <div class="dashboard-grid">
+            <article class="dash-card trend-card">
+              <div class="dash-title"><div><small data-i18n="weeklyTrend">Trend Mingguan</small><strong>Stock Movement</strong></div><div class="legend"><span class="inbound"></span><small data-i18n="stockIn">Masuk</small><span class="outbound"></span><small data-i18n="stockOut">Keluar</small></div></div>
+              <div class="chart-wrap">
+                <svg class="trend-svg" viewBox="0 0 700 260" role="img" aria-label="Weekly stock trend chart">
+                  <defs>
+                    <linearGradient id="areaIn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#64b5ff" stop-opacity=".38"/><stop offset="1" stop-color="#64b5ff" stop-opacity="0"/></linearGradient>
+                    <linearGradient id="areaOut" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9c83ff" stop-opacity=".28"/><stop offset="1" stop-color="#9c83ff" stop-opacity="0"/></linearGradient>
+                  </defs>
+                  <g class="grid-lines"><line x1="0" y1="40" x2="700" y2="40"/><line x1="0" y1="100" x2="700" y2="100"/><line x1="0" y1="160" x2="700" y2="160"/><line x1="0" y1="220" x2="700" y2="220"/></g>
+                  <path class="chart-area-in" d="M0 190 C70 175,100 105,170 130 S270 80,340 106 S450 55,520 80 S620 42,700 62 L700 250 L0 250Z"/>
+                  <path class="chart-area-out" d="M0 220 C80 210,110 160,180 174 S285 118,350 142 S465 96,535 116 S625 82,700 92 L700 250 L0 250Z"/>
+                  <path class="chart-line-in" d="M0 190 C70 175,100 105,170 130 S270 80,340 106 S450 55,520 80 S620 42,700 62"/>
+                  <path class="chart-line-out" d="M0 220 C80 210,110 160,180 174 S285 118,350 142 S465 96,535 116 S625 82,700 92"/>
+                </svg>
+                <div class="chart-days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+              </div>
+            </article>
+
+            <article class="dash-card capacity-card">
+              <div class="dash-title"><div><small data-i18n="warehouseCapacity">Kapasitas Gudang</small><strong>Plant A</strong></div><span class="status-chip">LIVE</span></div>
+              <div class="capacity-wrap">
+                <div class="capacity-ring"><div><strong>78%</strong><small data-i18n="used">Terpakai</small></div></div>
+                <div class="capacity-details">
+                  <div><span><i class="used-dot"></i><span data-i18n="used">Terpakai</span></span><strong>114 ton</strong></div>
+                  <div><span><i class="free-dot"></i><span data-i18n="free">Tersedia</span></span><strong>32 ton</strong></div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <article class="dash-card table-card">
+            <div class="dash-title"><div><small data-i18n="materialStatus">Status Material</small><strong>Latest Stock Snapshot</strong></div><button class="ghost-small">Export XLS ↗</button></div>
+            <div class="data-table">
+              <div class="data-row table-head"><span data-i18n="material">Material</span><span data-i18n="batch">Batch</span><span data-i18n="status">Status</span><span data-i18n="quantity">Kuantitas</span></div>
+              <div class="data-row"><span><i class="material-icon blue">A</i>Material Alpha</span><span>BT-2607-A</span><span><b class="ready">READY</b></span><strong>24,600 kg</strong></div>
+              <div class="data-row"><span><i class="material-icon violet">B</i>Material Beta</span><span>BT-2607-B</span><span><b class="hold">HOLD</b></span><strong>8,240 kg</strong></div>
+              <div class="data-row"><span><i class="material-icon amber">C</i>Material Gamma</span><span>BT-2606-C</span><span><b class="fifo">FIFO</b></span><strong>12,980 kg</strong></div>
+              <div class="data-row"><span><i class="material-icon green">D</i>Material Delta</span><span>BT-2607-D</span><span><b class="ready">READY</b></span><strong>18,420 kg</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="capabilities">
+      <div class="section-heading split reveal">
+        <div>
+          <div class="eyebrow"><span></span><span data-i18n="capEyebrow">CAPABILITIES</span></div>
+          <h2 data-i18n="capTitle">Dari pemetaan proses sampai aplikasi siap pakai.</h2>
+        </div>
+        <p data-i18n="capIntro">Saya bekerja pada sisi operasional dan teknis agar requirement tetap nyambung dengan perilaku sistem akhirnya.</p>
+      </div>
+      <div class="capability-grid">
+        <article class="capability-card tilt-card reveal"><div class="cap-icon">⌁</div><span>01</span><h3 data-i18n="cap1Title">Process & Control Design</h3><p data-i18n="cap1Text">Mapping alur, role, exception, approval, FIFO, quality control, dan ownership data.</p></article>
+        <article class="capability-card tilt-card reveal delay-1"><div class="cap-icon">◫</div><span>02</span><h3 data-i18n="cap2Title">Application & Dashboard UI</h3><p data-i18n="cap2Text">Interface responsif untuk operator, supervisor, manajemen, HP, desktop, dan display besar.</p></article>
+        <article class="capability-card tilt-card reveal delay-2"><div class="cap-icon">↻</div><span>03</span><h3 data-i18n="cap3Title">Data & Automation</h3><p data-i18n="cap3Text">Spreadsheet, Apps Script, database, API, scheduled sync, export, dan reporting otomatis.</p></article>
+        <article class="capability-card tilt-card reveal delay-3"><div class="cap-icon">✓</div><span>04</span><h3 data-i18n="cap4Title">Testing & Deployment</h3><p data-i18n="cap4Text">Validasi skenario nyata, anti-duplikasi, data validation, deployment web dan PWA.</p></article>
+      </div>
+    </section>
+
+    <section class="section shell policy-section">
+      <div class="policy-card reveal">
+        <div class="policy-icon">⌾</div>
+        <div><div class="eyebrow"><span></span><span data-i18n="policyEyebrow">DATA POLICY</span></div><h2 data-i18n="policyTitle">Aman untuk kebutuhan portofolio.</h2><p data-i18n="policyText">Semua workflow ditampilkan dalam bentuk anonim dan seluruh angka pada dashboard demo menggunakan data sintetis. Portofolio ini tidak menampilkan credential, link produksi, atau data operasional rahasia.</p></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="contact">
+      <div class="contact-card reveal">
+        <div class="contact-copy">
+          <div class="eyebrow light"><span></span><span data-i18n="contactEyebrow">OPEN TO OPPORTUNITIES</span></div>
+          <h2 data-i18n="contactTitle">Mari membangun operasional yang lebih efektif.</h2>
+          <p data-i18n="contactText">Terbuka untuk kesempatan pada warehouse systems, operational excellence, business process automation, supply chain systems, dan digital transformation.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-button primary" id="emailLink" href="mailto:triobagusn@gmail.com"><span data-i18n="emailMe">Email</span><b>↗</b></a>
+          <a class="contact-button" id="linkedinLink" href="https://www.linkedin.com/in/trio-bagus-nugroho-60559b205/" target="_blank" rel="noopener"><span data-i18n="linkedinMe">LinkedIn</span><b>↗</b></a>
+          <a class="contact-button" id="whatsappLink" href="https://wa.me/6285136513273" target="_blank" rel="noopener"><span data-i18n="whatsappMe">WhatsApp</span><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <div><strong>TRIO BAGUS NUGROHO</strong><span>Warehouse Operations & Digitalization</span></div>
+      <p>© <span id="year"></span> <span data-i18n="footerNote">Portfolio dengan workflow yang dianonimkan dan data demo.</span></p>
+      <a href="#top" class="back-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Play premium ambient music">
+    <span class="music-icon">♫</span>
+    <span data-i18n="musicOff" id="musicLabel">Putar ambient</span>
+    <i></i><i></i><i></i>
+  </button>
+  <audio id="ambientAudio" src="assets/premium-ambient.mp3" loop preload="metadata"></audio>
+
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+      <div class="modal-visual" id="modalVisual"></div>
+      <div class="modal-content">
+        <div class="modal-kicker" id="modalKicker"></div>
+        <h2 id="modalTitle"></h2>
+        <p class="modal-summary" id="modalSummary"></p>
+        <div class="modal-section"><h3 data-i18n="modalChallenge">Tantangan</h3><p id="modalChallengeText"></p></div>
+        <div class="modal-section"><h3 data-i18n="modalSolution">Solusi</h3><p id="modalSolutionText"></p></div>
+        <div class="modal-columns">
+          <div class="modal-section"><h3 data-i18n="modalContribution">Kontribusi saya</h3><ul id="modalContributionList"></ul></div>
+          <div class="modal-section"><h3 data-i18n="modalFeatures">Fitur utama</h3><ul id="modalFeatureList"></ul></div>
+        </div>
+        <div class="modal-stack" id="modalStack"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="portfolio-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
