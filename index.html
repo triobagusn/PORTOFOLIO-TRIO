@@ -1,26 +1,26 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="id" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Warehouse Operations & Digitalization portfolio showcasing practical systems for inventory, traceability, reporting, and operational workflows." />
-  <meta name="theme-color" content="#08111f" />
-  <meta property="og:title" content="Warehouse Operations & Digitalization Portfolio" />
-  <meta property="og:description" content="Selected operational systems built for inventory control, traceability, reporting, and workflow automation." />
+  <meta name="description" content="Portofolio Warehouse Operations & Digitalization milik Trio Bagus Nugroho." />
+  <meta name="theme-color" content="#0c1222" />
+  <meta property="og:title" content="Trio Bagus Nugroho — Portfolio" />
+  <meta property="og:description" content="Selected portfolio in warehouse operations, automation, traceability, and operational systems." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="styles.css" />
-  <title>Trio Bagus Nugroho — Operations & Digitalization</title>
+  <title>Trio Bagus Nugroho — Portofolio</title>
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="Back to top">
-      <span class="brand-mark">TB</span>
+      <span class="brand-mark">TBN</span>
       <span class="brand-copy">
-        <strong>TRIO BAGUS</strong>
-        <small data-i18n="brandSubtitle">Operations & Digitalization</small>
+        <strong>TRIO BAGUS NUGROHO</strong>
+        <small data-i18n="brandSubtitle">Portofolio</small>
       </span>
     </a>
 
@@ -32,9 +32,9 @@
     </nav>
 
     <div class="header-actions">
-      <button class="chip-button" id="languageToggle" type="button" aria-label="Change language">ID</button>
+      <button class="chip-button" id="languageToggle" type="button" aria-label="Change language">EN</button>
       <button class="icon-button" id="themeToggle" type="button" aria-label="Change theme">
-        <span class="theme-icon" aria-hidden="true">☼</span>
+        <span id="themeIcon">☼</span>
       </button>
       <button class="menu-button" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -50,143 +50,113 @@
   </div>
 
   <main>
-    <section class="hero section-shell">
+    <section class="hero shell">
       <div class="hero-copy reveal">
         <div class="eyebrow"><span></span><span data-i18n="heroEyebrow">WAREHOUSE • SYSTEMS • AUTOMATION</span></div>
+        <div class="profile-mini">
+          <img src="assets/profile-placeholder.svg" alt="Foto profil Trio Bagus Nugroho" class="profile-avatar" id="profilePhoto">
+          <div>
+            <strong>Trio Bagus Nugroho</strong>
+            <small data-i18n="heroRole">Warehouse Operations & Digitalization</small>
+          </div>
+        </div>
         <h1>
-          <span data-i18n="heroTitleLine1">Turning warehouse</span>
-          <span class="gradient-text" data-i18n="heroTitleLine2">operations into digital systems.</span>
+          <span data-i18n="heroTitleLine1">Mengubah proses operasional</span>
+          <span class="gradient-text" data-i18n="heroTitleLine2">menjadi sistem digital yang bisa dipakai.</span>
         </h1>
         <p class="hero-lead" data-i18n="heroLead">
-          I design practical tools that connect real operational workflows with inventory control, traceability, reporting, and decision-ready dashboards.
+          Saya membangun tools yang menghubungkan workflow lapangan dengan kontrol stok, traceability, reporting, dan dashboard yang siap dipakai untuk pengambilan keputusan.
         </p>
         <div class="hero-actions">
           <a class="primary-button" href="#projects">
-            <span data-i18n="viewProjects">View selected projects</span>
+            <span data-i18n="viewProjects">Lihat project pilihan</span>
             <span aria-hidden="true">↘</span>
           </a>
-          <a class="secondary-button" href="#contact" data-i18n="discussRole">Discuss a role</a>
+          <a class="secondary-button" href="tel:+6285136513273" data-i18n="callMe">Hubungi saya</a>
         </div>
         <div class="hero-meta">
-          <div>
-            <strong>6</strong>
-            <span data-i18n="metaProjects">selected systems</span>
-          </div>
-          <div>
-            <strong>End-to-end</strong>
-            <span data-i18n="metaScope">workflow ownership</span>
-          </div>
-          <div>
-            <strong>Mobile-first</strong>
-            <span data-i18n="metaAccess">field-ready access</span>
-          </div>
+          <div><strong>6</strong><span data-i18n="metaProjects">selected systems</span></div>
+          <div><strong>End-to-end</strong><span data-i18n="metaScope">workflow ownership</span></div>
+          <div><strong>Mobile-first</strong><span data-i18n="metaAccess">field-ready access</span></div>
         </div>
       </div>
 
-      <div class="hero-visual reveal delay-1" aria-label="Abstract operations dashboard preview">
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
-        <div class="dashboard-frame glass-card">
-          <div class="dashboard-topbar">
-            <div class="window-dots"><span></span><span></span><span></span></div>
-            <div class="dashboard-status"><span></span> LIVE OPERATIONS</div>
+      <div class="hero-visual reveal delay-1">
+        <div class="glass-panel profile-panel">
+          <div class="panel-top">
+            <span class="status-dot"></span>
+            <small>Portfolio Snapshot</small>
           </div>
-          <div class="dashboard-grid">
-            <aside class="mock-sidebar">
-              <div class="sidebar-logo">OPS</div>
-              <div class="sidebar-item active"></div>
-              <div class="sidebar-item"></div>
-              <div class="sidebar-item"></div>
-              <div class="sidebar-item small"></div>
-            </aside>
-            <div class="mock-content">
-              <div class="mock-heading">
-                <div><small>CONTROL CENTER</small><strong>Warehouse Overview</strong></div>
-                <div class="mock-filter">Plant A ▾</div>
-              </div>
-              <div class="mock-kpis">
-                <div><small>AVAILABLE</small><strong>82.4%</strong><i class="positive">+4.1%</i></div>
-                <div><small>ON HOLD</small><strong>12</strong><i>lots</i></div>
-                <div><small>FIFO ALERT</small><strong>03</strong><i class="warning">review</i></div>
-              </div>
-              <div class="mock-main-row">
-                <div class="mock-chart">
-                  <div class="chart-title"><span>Stock movement</span><small>7 days</small></div>
-                  <svg viewBox="0 0 520 190" role="img" aria-label="Stock movement chart">
-                    <defs>
-                      <linearGradient id="areaGradient" x1="0" x2="0" y1="0" y2="1">
-                        <stop offset="0" stop-color="currentColor" stop-opacity=".45"/>
-                        <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
-                      </linearGradient>
-                    </defs>
-                    <path class="chart-area" d="M0,155 C55,150 60,95 115,105 C165,114 190,55 235,72 C285,90 310,30 360,48 C410,65 432,18 520,31 L520,190 L0,190 Z"/>
-                    <path class="chart-line" d="M0,155 C55,150 60,95 115,105 C165,114 190,55 235,72 C285,90 310,30 360,48 C410,65 432,18 520,31"/>
-                    <circle cx="360" cy="48" r="6"/>
-                  </svg>
-                  <div class="chart-labels"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div>
-                </div>
-                <div class="mock-capacity">
-                  <div class="chart-title"><span>Capacity</span><small>Live</small></div>
-                  <div class="capacity-ring"><span>78<small>%</small></span></div>
-                  <div class="capacity-legend"><span><i></i>Used</span><span><i></i>Free</span></div>
-                </div>
-              </div>
-              <div class="mock-table">
-                <div class="mock-table-head"><span>Material</span><span>Batch</span><span>Status</span></div>
-                <div><span><i class="avatar">A</i>Material Alpha</span><span>BT-2607-A</span><span class="status-ready">READY</span></div>
-                <div><span><i class="avatar">B</i>Material Beta</span><span>BT-2607-B</span><span class="status-hold">HOLD</span></div>
-                <div><span><i class="avatar">C</i>Material Gamma</span><span>BT-2606-C</span><span class="status-review">FIFO</span></div>
-              </div>
-            </div>
+          <div class="panel-photo-wrap">
+            <img src="assets/profile-placeholder.svg" alt="Foto profil utama" class="panel-photo">
+          </div>
+          <h3>Trio Bagus Nugroho</h3>
+          <p data-i18n="heroPanelText">Practical builder of warehouse systems, dashboard automation, stock traceability, and digital workflows.</p>
+          <div class="quick-pills">
+            <span>Next.js</span><span>Supabase</span><span>Apps Script</span><span>PWA</span>
           </div>
         </div>
-        <div class="floating-tag tag-one"><span>✓</span><div><small>TRACEABILITY</small><strong>Batch connected</strong></div></div>
-        <div class="floating-tag tag-two"><span>↻</span><div><small>AUTOMATION</small><strong>Data synchronized</strong></div></div>
+        <div class="glass-panel dashboard-panel">
+          <div class="dashboard-topbar">
+            <div class="window-dots"><span></span><span></span><span></span></div>
+            <div class="dashboard-status"><span></span> LIVE OPS</div>
+          </div>
+          <div class="mock-kpis">
+            <div><small>AVAILABLE</small><strong>82.4%</strong><i class="positive">+4.1%</i></div>
+            <div><small>ON HOLD</small><strong>12</strong><i>lots</i></div>
+            <div><small>FIFO ALERT</small><strong>03</strong><i class="warning">review</i></div>
+          </div>
+          <div class="bars">
+            <span style="height:40%"></span>
+            <span style="height:68%"></span>
+            <span style="height:55%"></span>
+            <span style="height:80%"></span>
+            <span style="height:72%"></span>
+            <span style="height:90%"></span>
+            <span style="height:64%"></span>
+          </div>
+          <div class="mini-table">
+            <div><span>Material Alpha</span><b class="ok">READY</b></div>
+            <div><span>Material Beta</span><b class="warn">HOLD</b></div>
+            <div><span>Material Gamma</span><b class="fifo">FIFO</b></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="trust-strip" aria-label="Technology stack">
+    <section class="trust-strip">
       <div class="marquee-track">
         <span>Next.js</span><i></i><span>Supabase</span><i></i><span>Google Apps Script</span><i></i><span>PostgreSQL</span><i></i><span>PWA</span><i></i><span>Google Sheets</span><i></i><span>Vercel</span><i></i><span>Process Design</span>
         <span>Next.js</span><i></i><span>Supabase</span><i></i><span>Google Apps Script</span><i></i><span>PostgreSQL</span><i></i><span>PWA</span><i></i><span>Google Sheets</span><i></i><span>Vercel</span><i></i><span>Process Design</span>
       </div>
     </section>
 
-    <section class="about section-shell section-pad" id="about">
+    <section class="shell section" id="about">
       <div class="section-heading reveal">
         <div class="eyebrow"><span></span><span data-i18n="aboutEyebrow">PROFILE</span></div>
-        <h2 data-i18n="aboutTitle">Built from real operations, not assumptions.</h2>
+        <h2 data-i18n="aboutTitle">Dibangun dari operasional nyata, bukan asumsi.</h2>
       </div>
       <div class="about-grid">
         <div class="about-copy reveal">
-          <p data-i18n="aboutP1">My work sits between warehouse operations and software delivery. I translate daily constraints—stock accuracy, FIFO, batch history, approval delays, manual reports—into systems that people can actually use on the floor.</p>
-          <p data-i18n="aboutP2">I contribute across process mapping, data structure, UI/UX, automation logic, testing, and deployment. The result is not only a dashboard, but an operational workflow with clear controls and traceable data.</p>
+          <p data-i18n="aboutP1">Pekerjaan saya berada di antara operasional gudang dan pengembangan sistem. Saya menerjemahkan kendala harian—akurasi stok, FIFO, histori batch, approval yang lambat, dan laporan manual—menjadi sistem yang benar-benar bisa dipakai.</p>
+          <p data-i18n="aboutP2">Saya terlibat dari pemetaan proses, struktur data, UI/UX, logika otomatisasi, testing, sampai deployment. Hasilnya bukan hanya dashboard, tetapi workflow operasional yang lebih jelas, terkontrol, dan traceable.</p>
         </div>
         <div class="principles reveal delay-1">
-          <article>
-            <span>01</span>
-            <div><h3 data-i18n="principle1Title">Operational first</h3><p data-i18n="principle1Text">The system follows how work is performed, including exceptions and controls.</p></div>
-          </article>
-          <article>
-            <span>02</span>
-            <div><h3 data-i18n="principle2Title">Traceable by design</h3><p data-i18n="principle2Text">Every movement should be explainable from source data to final report.</p></div>
-          </article>
-          <article>
-            <span>03</span>
-            <div><h3 data-i18n="principle3Title">Simple at the point of use</h3><p data-i18n="principle3Text">Complex logic stays behind a fast, mobile-friendly interface.</p></div>
-          </article>
+          <article><span>01</span><div><h3 data-i18n="principle1Title">Operational first</h3><p data-i18n="principle1Text">Sistem mengikuti cara kerja lapangan, termasuk exception dan kontrolnya.</p></div></article>
+          <article><span>02</span><div><h3 data-i18n="principle2Title">Traceable by design</h3><p data-i18n="principle2Text">Setiap pergerakan harus bisa dijelaskan dari sumber data sampai laporan akhir.</p></div></article>
+          <article><span>03</span><div><h3 data-i18n="principle3Title">Simple at the point of use</h3><p data-i18n="principle3Text">Logika kompleks disembunyikan di balik interface yang cepat dan mudah dipakai.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="projects-section section-pad" id="projects">
-      <div class="section-shell">
+    <section class="section" id="projects">
+      <div class="shell">
         <div class="section-heading split reveal">
           <div>
             <div class="eyebrow"><span></span><span data-i18n="projectsEyebrow">SELECTED WORK</span></div>
-            <h2 data-i18n="projectsTitle">Systems designed around operational outcomes.</h2>
+            <h2 data-i18n="projectsTitle">Project yang dirancang untuk hasil operasional.</h2>
           </div>
-          <p data-i18n="projectsIntro">All projects below are presented with anonymized workflows and synthetic data. No employer production system or confidential information is connected.</p>
+          <p data-i18n="projectsIntro">Semua project di bawah ini ditampilkan dengan workflow yang dianonimkan dan data sintetis. Tidak terhubung ke sistem produksi perusahaan mana pun.</p>
         </div>
         <div class="project-filters reveal" role="group" aria-label="Project category filter">
           <button class="filter-button active" data-filter="all" data-i18n="filterAll">All systems</button>
@@ -198,97 +168,53 @@
       </div>
     </section>
 
-    <section class="capabilities section-shell section-pad" id="capabilities">
+    <section class="shell section" id="capabilities">
       <div class="section-heading split reveal">
         <div>
           <div class="eyebrow"><span></span><span data-i18n="capEyebrow">CAPABILITIES</span></div>
-          <h2 data-i18n="capTitle">From process discovery to a working application.</h2>
+          <h2 data-i18n="capTitle">Dari pemetaan proses sampai aplikasi siap pakai.</h2>
         </div>
-        <p data-i18n="capIntro">I work across the operational and technical layers so requirements remain connected to the final system behavior.</p>
+        <p data-i18n="capIntro">Saya bekerja pada sisi operasional sekaligus teknis agar requirement tetap nyambung dengan perilaku sistem akhirnya.</p>
       </div>
       <div class="capability-grid">
-        <article class="capability-card reveal">
-          <div class="cap-icon">⌁</div>
-          <span>01</span>
-          <h3 data-i18n="cap1Title">Process & Control Design</h3>
-          <p data-i18n="cap1Text">Mapping warehouse flows, roles, exceptions, approvals, FIFO rules, and data ownership.</p>
-          <ul><li>Workflow mapping</li><li>Business rules</li><li>Role-based access</li></ul>
-        </article>
-        <article class="capability-card reveal delay-1">
-          <div class="cap-icon">◫</div>
-          <span>02</span>
-          <h3 data-i18n="cap2Title">Application & Dashboard UI</h3>
-          <p data-i18n="cap2Text">Building responsive interfaces for operators, supervisors, management, mobile devices, and large displays.</p>
-          <ul><li>Responsive UI/UX</li><li>Operational forms</li><li>Decision dashboards</li></ul>
-        </article>
-        <article class="capability-card reveal delay-2">
-          <div class="cap-icon">↻</div>
-          <span>03</span>
-          <h3 data-i18n="cap3Title">Data & Automation</h3>
-          <p data-i18n="cap3Text">Connecting spreadsheets, databases, APIs, scheduled sync, exports, and automated operational reporting.</p>
-          <ul><li>Apps Script</li><li>Supabase / SQL</li><li>Scheduled reporting</li></ul>
-        </article>
-        <article class="capability-card reveal delay-3">
-          <div class="cap-icon">✓</div>
-          <span>04</span>
-          <h3 data-i18n="cap4Title">Testing & Deployment</h3>
-          <p data-i18n="cap4Text">Validating real scenarios, preventing duplicate transactions, and delivering accessible web/PWA deployments.</p>
-          <ul><li>Scenario testing</li><li>Data validation</li><li>Vercel / PWA</li></ul>
-        </article>
+        <article class="capability-card reveal"><div class="cap-icon">⌁</div><span>01</span><h3 data-i18n="cap1Title">Process & Control Design</h3><p data-i18n="cap1Text">Mapping alur gudang, role, exception, approval, FIFO, dan ownership data.</p></article>
+        <article class="capability-card reveal delay-1"><div class="cap-icon">◫</div><span>02</span><h3 data-i18n="cap2Title">Application & Dashboard UI</h3><p data-i18n="cap2Text">Membangun interface responsif untuk operator, supervisor, manajemen, HP, dan display besar.</p></article>
+        <article class="capability-card reveal delay-2"><div class="cap-icon">↻</div><span>03</span><h3 data-i18n="cap3Title">Data & Automation</h3><p data-i18n="cap3Text">Menghubungkan spreadsheet, database, API, scheduled sync, export, dan reporting otomatis.</p></article>
+        <article class="capability-card reveal delay-3"><div class="cap-icon">✓</div><span>04</span><h3 data-i18n="cap4Title">Testing & Deployment</h3><p data-i18n="cap4Text">Validasi skenario nyata, anti duplikasi transaksi, dan deployment web/PWA yang mudah diakses.</p></article>
       </div>
     </section>
 
-    <section class="workflow section-pad">
-      <div class="section-shell workflow-shell">
-        <div class="workflow-copy reveal">
-          <div class="eyebrow"><span></span><span data-i18n="workflowEyebrow">HOW I WORK</span></div>
-          <h2 data-i18n="workflowTitle">A practical delivery loop.</h2>
-          <p data-i18n="workflowIntro">Each project starts with the operational problem, then moves through rules, interface, data, and field validation.</p>
-          <div class="workflow-callout">
-            <strong data-i18n="workflowCalloutTitle">The goal</strong>
-            <span data-i18n="workflowCalloutText">Make the correct process easier to perform and easier to audit.</span>
-          </div>
-        </div>
-        <div class="workflow-steps reveal delay-1">
-          <article><span>01</span><div><h3 data-i18n="step1Title">Observe</h3><p data-i18n="step1Text">Understand the real flow, data gaps, and failure points.</p></div></article>
-          <article><span>02</span><div><h3 data-i18n="step2Title">Structure</h3><p data-i18n="step2Text">Define master data, transactions, roles, and business rules.</p></div></article>
-          <article><span>03</span><div><h3 data-i18n="step3Title">Build</h3><p data-i18n="step3Text">Develop the UI, automation, database, reports, and controls.</p></div></article>
-          <article><span>04</span><div><h3 data-i18n="step4Title">Validate</h3><p data-i18n="step4Text">Test with realistic scenarios and refine for field use.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="confidentiality section-shell">
+    <section class="shell section confidentiality">
       <div class="confidentiality-card reveal">
         <div class="lock-mark">⌾</div>
         <div>
           <span data-i18n="confLabel">PORTFOLIO DATA POLICY</span>
-          <h2 data-i18n="confTitle">Anonymized by default.</h2>
-          <p data-i18n="confText">This portfolio demonstrates transferable system design and technical capability using fictional entities, synthetic data, and isolated demo environments. It does not expose employer credentials, production links, internal documents, or real operational records.</p>
+          <h2 data-i18n="confTitle">Dianonimkan secara default.</h2>
+          <p data-i18n="confText">Portofolio ini menunjukkan kemampuan desain sistem dan teknis menggunakan entitas fiktif, data sintetis, dan environment demo terpisah. Tidak menampilkan credential, link produksi, dokumen internal, atau catatan operasional nyata.</p>
         </div>
       </div>
     </section>
 
-    <section class="contact section-shell section-pad" id="contact">
+    <section class="shell section" id="contact">
       <div class="contact-card reveal">
         <div>
           <div class="eyebrow light"><span></span><span data-i18n="contactEyebrow">OPEN TO OPPORTUNITIES</span></div>
-          <h2 data-i18n="contactTitle">Let’s improve the way operations work.</h2>
-          <p data-i18n="contactText">Suitable for roles in warehouse systems, business process automation, operational digitalization, supply chain systems, and junior full-stack development.</p>
+          <h2 data-i18n="contactTitle">Mari tingkatkan cara operasional bekerja.</h2>
+          <p data-i18n="contactText">Cocok untuk role warehouse systems, business process automation, operational digitalization, supply chain systems, dan junior full-stack development.</p>
         </div>
         <div class="contact-actions">
-          <a class="contact-button" id="emailLink" href="mailto:your-email@example.com"><span data-i18n="emailMe">Email me</span><b>↗</b></a>
+          <a class="contact-button" id="emailLink" href="mailto:your-email@example.com"><span data-i18n="emailMe">Email saya</span><b>↗</b></a>
           <a class="contact-button ghost disabled-link" id="linkedinLink" href="#" aria-disabled="true"><span>LinkedIn</span><b>↗</b></a>
-          <a class="contact-button ghost disabled-link" id="githubLink" href="#" aria-disabled="true"><span>GitHub</span><b>↗</b></a>
+          <a class="contact-button ghost" id="phoneLink" href="tel:+6285136513273"><span>Phone / WhatsApp</span><b>↗</b></a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="section-shell footer-inner">
+    <div class="shell footer-inner">
       <div><strong>TRIO BAGUS NUGROHO</strong><span data-i18n="footerRole">Warehouse Operations & Digitalization</span></div>
-      <p>© <span id="year"></span> <span data-i18n="footerNote">Portfolio demo with anonymized project data.</span></p>
+      <p>© <span id="year"></span> <span data-i18n="footerNote">Portfolio demo dengan data project yang dianonimkan.</span></p>
       <a href="#top" aria-label="Back to top">↑</a>
     </div>
   </footer>
@@ -302,30 +228,18 @@
         <div class="modal-kicker" id="modalKicker"></div>
         <h2 id="modalTitle"></h2>
         <p class="modal-summary" id="modalSummary"></p>
-        <div class="modal-section">
-          <h3 data-i18n="modalChallenge">Challenge</h3>
-          <p id="modalChallengeText"></p>
-        </div>
-        <div class="modal-section">
-          <h3 data-i18n="modalSolution">Solution</h3>
-          <p id="modalSolutionText"></p>
-        </div>
+        <div class="modal-section"><h3 data-i18n="modalChallenge">Challenge</h3><p id="modalChallengeText"></p></div>
+        <div class="modal-section"><h3 data-i18n="modalSolution">Solution</h3><p id="modalSolutionText"></p></div>
         <div class="modal-columns">
-          <div class="modal-section">
-            <h3 data-i18n="modalContribution">My contribution</h3>
-            <ul id="modalContributionList"></ul>
-          </div>
-          <div class="modal-section">
-            <h3 data-i18n="modalFeatures">Key capabilities</h3>
-            <ul id="modalFeatureList"></ul>
-          </div>
+          <div class="modal-section"><h3 data-i18n="modalContribution">My contribution</h3><ul id="modalContributionList"></ul></div>
+          <div class="modal-section"><h3 data-i18n="modalFeatures">Key capabilities</h3><ul id="modalFeatureList"></ul></div>
         </div>
         <div class="modal-stack" id="modalStack"></div>
       </div>
     </div>
   </div>
 
-  <noscript>This portfolio requires JavaScript for project filtering and case-study details.</noscript>
+  <noscript>Website ini memerlukan JavaScript untuk filter project dan detail case study.</noscript>
   <script src="portfolio-data.js"></script>
   <script src="script.js"></script>
 </body>
